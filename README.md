@@ -1,23 +1,25 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`CURSO` Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
+`DISCIPLINA` Projeto: Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio
 
-`SEMESTRE`
+`SEMESTRE` Eixo 3 - 2024
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+A aplicação é voltada para a segurança na saída das crianças da escola.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Ana Clara de Oliveira Ferreira
+* João Pedro Vargas da Silva
+* João Victor Brito Abadia
+* Lucas Marques Gomes Viana Lima
+* Marcela Ratton Santos Silva
+* Priscila Martins Cazuza
 
 ## Orientador
 
-* Nome completo do professor 1
+* Cristiano de Macêdo Neto
 
 ## Instruções de utilização
 
