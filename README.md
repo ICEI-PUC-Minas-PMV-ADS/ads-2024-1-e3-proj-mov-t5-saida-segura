@@ -1,4 +1,4 @@
-# SAÍSA SEGURA
+# SAÍDA SEGURA
 
 `CURSO` Análise e Desenvolvimento de Sistemas
 
