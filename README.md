@@ -6,7 +6,7 @@
 
 `SEMESTRE` Eixo 3 - 2024
 
-A aplicação é voltada para a segurança na saída das crianças da escola.
+A aplicação é voltada para a segurança das crianças na saída da escola.
 
 ## Integrantes
 
