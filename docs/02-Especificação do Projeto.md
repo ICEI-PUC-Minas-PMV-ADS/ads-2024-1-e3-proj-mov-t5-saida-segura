@@ -28,17 +28,12 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+|Umberto             | Certificar que seu filho está saindo com segurança da escola.           | Conseguir garantir o acesso por QR code à retirada do seu filho ao final do horário letivo.               |
+|Marina              | Gerenciar quem vai buscar seus filhos na escola de forma segura e alinhada com a instituição de ensino.                 | Tornar flexível e confiável o alinhamento com a escola dos responsáveis que irão buscar seus filhos ao final do horário letivo quando for necessário alguma mudança. |
+|Virgínia            | Garantir que sua filha não será liberada sem um adulto responsável e sem o seu aval.                 | Visualizar em tempo real  o status de saída da sua filha e o nome do responsável pela retirada da mesma. |
+|Umberto             | Conseguir acompanhar a localização do seu filho até em casa.                 | Assegurar a localização atual do seu filho durante o trajeto de casa. |
+|Marina              | Visualizar e manusear  com facilidade a aplicação.                 | Tornar uma boa experiência do usuário na utilização do app. |
+|Virgínia            | Receber notificação sobre qualquer situação emergencial com sua filha.                 | Alertar sobre situações emergenciais de segurança em caso de eventual risco. |
 
 ## Modelagem do Processo de Negócio 
 
