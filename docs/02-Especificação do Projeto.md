@@ -132,7 +132,7 @@ O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utiliz
 
 Analise do Gráfico de Gantt:
 
-![Análise do Gráfico de Gantt](img/analise gantt.png)
+![Análise do Gráfico de Gantt](img/analisegantt.png)
 
 
 ## Gerenciamento de Equipe
