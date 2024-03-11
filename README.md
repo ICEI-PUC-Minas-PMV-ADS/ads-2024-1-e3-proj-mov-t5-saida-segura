@@ -1,6 +1,5 @@
 # SAÍDA SEGURA
 
-![Logo](img/saidasegura.png)
 
 `CURSO` Análise e Desenvolvimento de Sistemas
 
