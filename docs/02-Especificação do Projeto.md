@@ -136,9 +136,12 @@ Analise do Gráfico de Gantt:
 
 ## Gerenciamento de Equipe
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
+O Gerenciamento de Equipes é o processo de acompanhar o desempenho de membros da equipe, fornecer feedback, resolver questões e gerenciar mudanças para otimizar o desempenho do projeto.
 
-![Simple Project Timeline](img/02-project-timeline.png)
+A equipe foi dividida em quatro principais papeis, sendo eles: Scrum Master, Product Owner, Desenvolvedores, QA Tester.
+
+
+![Simple Project Timeline](img/equipe.png)
 
 ## Gestão de Orçamento
 
