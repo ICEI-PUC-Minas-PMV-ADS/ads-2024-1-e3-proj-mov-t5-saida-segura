@@ -1,5 +1,7 @@
 # SAÍDA SEGURA
 
+![Logo](img/saidasegura.png)
+
 `CURSO` Análise e Desenvolvimento de Sistemas
 
 `DISCIPLINA` Projeto: Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio
