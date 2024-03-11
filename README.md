@@ -1,5 +1,7 @@
 # SAÍDA SEGURA
 
+![saidasegura](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/103007680/66d3c7ea-0ea2-4678-8823-924dfe0258c6)
+
 
 `CURSO` Análise e Desenvolvimento de Sistemas
 
