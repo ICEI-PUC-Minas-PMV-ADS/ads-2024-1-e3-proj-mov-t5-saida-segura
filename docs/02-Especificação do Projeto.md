@@ -83,6 +83,8 @@ O escopo funcional do projeto é definido por meio dos requisitos funcionais que
 |RNF-004| A aplicação estar disponível 24 horas por dia, 7 dias por semana. |  BAIXA | 
 |RNF-005| O sistema deve cumprir todas as leis e regulamentos aplicáveis. |  ALTA | 
 |RNF-006| Deve processar requisições do usuário em no máximo 3s. |  BAIXA | 
+|RNF-007| Deve ser construído em linguagem react native |  ALTA | 
+
 
 
 ## Restrições
