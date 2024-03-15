@@ -18,12 +18,12 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Umberto             | Certificar que seu filho está saindo com segurança da escola.           | Conseguir garantir o acesso por QR code à retirada do seu filho ao final do horário letivo.               |
-|Marina              | Gerenciar quem vai buscar seus filhos na escola de forma segura e alinhada com a instituição de ensino.                 | Tornar flexível e confiável o alinhamento com a escola dos responsáveis que irão buscar seus filhos ao final do horário letivo quando for necessário alguma mudança. |
-|Virgínia            | Garantir que sua filha não será liberada sem um adulto responsável e sem o seu aval.                 | Visualizar em tempo real  o status de saída da sua filha e o nome do responsável pela retirada da mesma. |
-|Umberto             | Conseguir acompanhar a localização do seu filho até em casa.                 | Assegurar a localização atual do seu filho durante o trajeto de casa. |
+|Umberto             | Certificar que meu filho está saindo com segurança da escola.           | Conseguir garantir o acesso por QR code à retirada do seu filho ao final do horário letivo.               |
+|Marina              | Gerenciar quem vai buscar meus filhos na escola de forma segura e alinhada com a instituição de ensino.                 | Tornar flexível e confiável o alinhamento com a escola dos responsáveis que irão buscar meus filhos ao final do horário letivo quando for necessário alguma mudança. |
+|Virgínia            | Garantir que minha filha não será liberada sem um adulto responsável e sem o meu aval.                 | Visualizar em tempo real  o status de saída da sua filha e o nome do responsável pela retirada da mesma. |
+|Umberto             | Conseguir acompanhar a localização do meu filho até em casa.                 | Assegurar a localização atual do seu filho durante o trajeto de casa. |
 |Marina              | Visualizar e manusear  com facilidade a aplicação.                 | Tornar uma boa experiência do usuário na utilização do app. |
-|Virgínia            | Receber notificação sobre qualquer situação emergencial com sua filha.                 | Alertar sobre situações emergenciais de segurança em caso de eventual risco. |
+|Virgínia            | Receber notificação sobre qualquer situação emergencial com minha filha.                 | Alertar sobre situações emergenciais de segurança em caso de eventual risco. |
 
 ## Modelagem do Processo de Negócio 
 
