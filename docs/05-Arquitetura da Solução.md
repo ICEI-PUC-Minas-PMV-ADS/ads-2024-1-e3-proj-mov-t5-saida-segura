@@ -32,9 +32,31 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+O projeto:
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+O projeto desenvolverá uma aplicação móvel a ser utilizada tanto para usuários de iOS quanto usuários de Android.
+
+Linguagens de programação utilizadas:
+
+React Native  e Javascript
+
+Repositório:
+
+Utilizaremos o Github como versionador de código onde serão armazenadas as partes prontas do projeto e por possuir compatibilidade com o Visual Studio Code.
+
+
+Gestão de Projeto:
+
+O gerenciamento do projeto se dá a partir do Github Projects , por já ser uma ferramenta do Github, facilitando o acesso a todos os colaboradores, compartilhando, direcionando e realizando a gestão de tempo e das atividades.
+
+IDE:
+
+A IDE utilizada será o Visual Studio Code por ser um excelente editor de código aberto e possuir compatibilidade com o Visual Studio Code.
+
+Banco de Dados:
+
+Sistema gerenciador de banco de dados: SQLite, escolhido por sua boa integração com o editor de código e para facilitar a migração do banco de dados para o serviço de hospedagem nas fases mais avançadas do projeto.
+
 
 ## Hospedagem
 
