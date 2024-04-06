@@ -63,14 +63,17 @@ O escopo funcional do projeto é definido por meio dos requisitos funcionais que
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve apresentar um sistema de cadastro de usuários. | ALTA | 
-|RF-002| A aplicação deve possuir perfis de usuário, Instituição de Ensino e usuário responsável.   | ALTA |
-|RF-003| A aplicação deve armazenar informações de imagens correspondentes ao estudante e responsável, bem como dados pessoais.   | ALTA |
-|RF-004| A aplicação deve permitir a inserção de dados de pessoas que tem autorização de buscar o aluno na escola, além dos pais.   | ALTA |
-|RF-005| A aplicação deve permitir a criação de QR code para pessoas autorizadas a pegar a criança na escola.  | MÉDIA |
-|RF-006| A aplicação deve emitir um alerta ao usuário Instituição de Ensino em casos de medidas protetivas.   | BAIXA |
-|RF-007| A aplicação deve limitar a inclusão de contatos de emergência a apenas cinco por criança.   | MÉDIA |
-|RF-008| O sistema deve permitir a edição de dados cadastrais.  | MÉDIA |
+|RF-001| A aplicação deve possuir na tela inicial com menu de perfis de usuário: Escola, Porteiro da escola, Pais ou responsáveis  | ALTA |
+|RF-002| A aplicação deve permitir que o usuário realize login utilizando email e senha | ALTA | 
+|RF-003| A aplicação deve armazenar e mostrar informações correspondentes ao estudante e responsável, bem como dados pessoais e imagens   | ALTA |
+|RF-004| A aplicação deve mostrar tela de pessoas autorizadas e não autorizadas a buscar o aluno na escola  | MÉDIA |
+|RF-005| A aplicação deve permitir a inserção de dados de pessoas que tem autorização de buscar o aluno na escola, além dos pais.   | ALTA |
+|RF-006| A aplicação deve permitir a inserção de dados de pessoas que não possuem autorização de buscar o aluno na escola.   | ALTA |
+|RF-007| A aplicação deve emitir um alerta ao usuário Instituição de Ensino em casos de medidas protetivas.   | BAIXA |
+|RF-008| A aplicação deve mostrar tela com histórico de saída do aluno  | MÉDIA |
+|RF-009| O sistema deve permitir a edição de dados cadastrais.  | MÉDIA |
+|RF-010| A aplicação deve permitir a criação de QR code para pessoas autorizadas a pegar a criança na escola.  | baixa |
+
 
 
 ### Requisitos não Funcionais
