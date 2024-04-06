@@ -29,11 +29,11 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+De acordo com levantamento de informações realizadas pela equipe identificamos fragilidades no processo de liberação das crianças, tais como: um processo feito por meio de ligações ligações telefônicas autorizando a saída com outra pessoa, liberações para pessoas conhecidas devido ao sentimento de confiança por se tratar de um parente ou conhecido próprimo, situações de medidas protetivas em que algum dos progenitores não possui autorização judicial para ter conto com o aulo, dentre outras dores.
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+A proposta da aplicação é de tornar esse processo mais seguro, reduzindo e promovendo possíveis oportunidades de melhorias no processo de liberação de alunos para suas casas. Para isso, a instiuição de ensino contratante pode utilizar os dados de matrícula para cadastrar o responsável contrante no App Saída Segura.  Aplicação vai permitir que o responsável pela criança cadastre uma lista de até cinco pessoas que tenham autorização para buscar o aluno além dela. A aplicação permite também que o responsável veja o hitórico de saída do aluno com o nome da pessoa que buscou o aluno, data e horário. Além disso, o responsável pode cadastrar uma relação de pessoas que NÃO tem autorização de buscar o aluno. Os professores possuem a relação de turmas aos quais estão responsáveis, bem como o poder de registro de quem buscou o aluno para o resgitro no Histórico de de Saídas quem buscou o aluno na escola, sendo de sua responsabilidade reportar qualquer problema no momento de liberar o aluno, tais como pessoa com medida judicial ou pessoa não cadastrada.
 
 ### Processo 1 – NOME DO PROCESSO
 
@@ -41,11 +41,6 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em segu
 
 ![Processo 1](img/02-bpmn-proc1.png)
 
-### Processo 2 – NOME DO PROCESSO
-
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
-
-![Processo 2](img/02-bpmn-proc2.png)
 
 ## Indicadores de Desempenho
 
