@@ -37,7 +37,7 @@ A proposta da aplicação é de tornar esse processo mais seguro, reduzindo e pr
 
 ### Processo 1 – NOME DO PROCESSO
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
+Abaixo está o Fluxo da Aplicação Saída Segura no padrão BPMN. 
 
 ![Processo 1](img/BPMN.png)
 
