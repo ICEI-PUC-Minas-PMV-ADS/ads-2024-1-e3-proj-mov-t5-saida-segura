@@ -39,7 +39,7 @@ A proposta da aplicação é de tornar esse processo mais seguro, reduzindo e pr
 
 Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
 
-![Processo 1](img/02-bpmn-proc1.png)
+![Processo 1](img/BPMN.png)
 
 
 ## Indicadores de Desempenho
