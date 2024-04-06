@@ -12,11 +12,8 @@ Os requisitos e as  ferramentas necessárias para estes testes de software são:
 Conectividade com a internet:
 - Imprescindível que o usuário possua conexão estável com a internet.
 
-- Principais navegadores de internet desktop no país: 
-Chrome ( 72,37%) Opera(10,01%), Edge (8,75%).
-
 - Compatibilidade de dispositivos:
-A aplicação deverá ser utilizada por dispositivos compatíveis como: smartphone, computador ou tablet.
+A aplicação deverá ser utilizada por dispositivos compatíveis como: smartphone ou tablet.
 
 
 ## Detalhamento dos Testes<p>
