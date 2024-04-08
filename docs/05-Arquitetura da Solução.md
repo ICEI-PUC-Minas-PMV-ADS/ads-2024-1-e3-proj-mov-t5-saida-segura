@@ -36,9 +36,10 @@ O projeto:
 
 O projeto desenvolverá uma aplicação móvel a ser utilizada tanto para usuários de iOS quanto usuários de Android.
 
-Linguagens de programação utilizadas:
+Linguagens de programação utilizadas e framework:
 
-React Native  e Javascript
+Javascript; 
+React Native;
 
 Repositório:
 
