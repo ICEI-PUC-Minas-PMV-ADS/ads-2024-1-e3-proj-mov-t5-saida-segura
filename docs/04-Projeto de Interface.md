@@ -27,6 +27,10 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema.
 
 ![Tela de Login](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/6778121f-d6cf-4ce7-ac37-3e2f44024ef4)
 
+### Tela de Cadastro
+
+![Tela de Cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/e359665f-3b42-4575-b35b-6b2dfbcd54d3)
+
 
 ### Tela inicial de responsáveis
 
