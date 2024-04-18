@@ -20,37 +20,37 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema.
  
 ### Página Inicial
 
-![Página inicial](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/07595c45-4fdb-4687-9ae7-c2b56c253f46)
+![Página inicial](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/04de8b14-19f5-412f-ab69-a50e139ff97e)
 
 
 ### Tela de login
 
-![Tela de Login](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/6916bec8-370e-4899-8d51-17fd054f0b07)
+![Tela de Login](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/6778121f-d6cf-4ce7-ac37-3e2f44024ef4)
 
 
 ### Tela inicial de responsáveis
 
-![Tela inicial de responsáveis](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/f684b000-d1f3-4a0e-b0a3-025e9477171b)
-
+![Tela inicial de responsáveis](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/9287ca06-8a1c-412f-9057-0814f39a7b5e)
 
 ### Tela de menu
 
-![Tela de Menu](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/431e6db9-53f6-49e1-b189-c934bc8330db)
+![Tela de Menu](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/0a00186e-e10b-43a4-8d8a-f32ef86ef46e)
 
 
 ### Tela de lista de pessoas autorizadas para buscar o aluno
 
-![Tela de Lista de pessoas autorizadas para buscar o aluno](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/b12b40b8-d307-49b3-96a0-fde75348d2e0)
+![Tela inicial de responsáveis](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/b2a0ef81-88d9-4735-b640-20753984e707)
 
 
 ### Tela para adicionar um responsável para buscar o aluno
 
-![Tela para Adicionar um responsável para buscar um aluno](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/7f17efe1-6d66-4a23-be3f-5894f5001bbe)
+![Tela para Adicionar um responsável para buscar um aluno](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/d4029245-f7e6-4565-95bb-f6d7004c8f59)
 
-![Tela para Adiconar um responsável para buscar um aluno](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/49bd0429-35cf-40de-baf2-50b5a2caa9a4)
+![Tela inicial de responsáveis](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/7a86074c-ccbc-4a99-965d-4ac6330b0e79)
 
 
 ### Tela de histórico de saída
 
-![Tela de Histórico de saídas](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/af2c52a7-437c-40f1-af2f-1aaf3de81845)
+![Tela de Histórico de saídas](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/9ba9c6dc-ee05-46e1-b88e-1e245a7640de)
+
 
