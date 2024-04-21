@@ -29,23 +29,18 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+De acordo com levantamento de informações realizadas pela equipe identificamos fragilidades no processo de liberação das crianças, tais como: um processo feito por meio de ligações ligações telefônicas autorizando a saída com outra pessoa, liberações para pessoas conhecidas devido ao sentimento de confiança por se tratar de um parente ou conhecido próprimo, situações de medidas protetivas em que algum dos progenitores não possui autorização judicial para ter conto com o aulo, dentre outras dores.
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+A proposta da aplicação é de tornar esse processo mais seguro, reduzindo e promovendo possíveis oportunidades de melhorias no processo de liberação de alunos para suas casas. Para isso, a instiuição de ensino contratante pode utilizar os dados de matrícula para cadastrar o responsável contrante no App Saída Segura.  Aplicação vai permitir que o responsável pela criança cadastre uma lista de até cinco pessoas que tenham autorização para buscar o aluno além dela. A aplicação permite também que o responsável veja o hitórico de saída do aluno com o nome da pessoa que buscou o aluno, data e horário. Além disso, o responsável pode cadastrar uma relação de pessoas que NÃO tem autorização de buscar o aluno. Os professores possuem a relação de turmas aos quais estão responsáveis, bem como o poder de registro de quem buscou o aluno para o resgitro no Histórico de de Saídas quem buscou o aluno na escola, sendo de sua responsabilidade reportar qualquer problema no momento de liberar o aluno, tais como pessoa com medida judicial ou pessoa não cadastrada.
 
 ### Processo 1 – NOME DO PROCESSO
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
+Abaixo está o Fluxo da Aplicação Saída Segura no padrão BPMN. 
 
-![Processo 1](img/02-bpmn-proc1.png)
+![Processo 1](img/BPMN.png)
 
-### Processo 2 – NOME DO PROCESSO
-
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
-
-![Processo 2](img/02-bpmn-proc2.png)
 
 ## Indicadores de Desempenho
 
@@ -63,14 +58,17 @@ O escopo funcional do projeto é definido por meio dos requisitos funcionais que
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve apresentar um sistema de cadastro de usuários. | ALTA | 
-|RF-002| A aplicação deve possuir perfis de usuário, Instituição de Ensino e usuário responsável.   | ALTA |
-|RF-003| A aplicação deve armazenar informações de imagens correspondentes ao estudante e responsável, bem como dados pessoais.   | ALTA |
-|RF-004| A aplicação deve permitir a inserção de dados de pessoas que tem autorização de buscar o aluno na escola, além dos pais.   | ALTA |
-|RF-005| A aplicação deve permitir a criação de QR code para pessoas autorizadas a pegar a criança na escola.  | MÉDIA |
-|RF-006| A aplicação deve emitir um alerta ao usuário Instituição de Ensino em casos de medidas protetivas.   | BAIXA |
-|RF-007| A aplicação deve limitar a inclusão de contatos de emergência a apenas cinco por criança.   | MÉDIA |
-|RF-008| O sistema deve permitir a edição de dados cadastrais.  | MÉDIA |
+|RF-001| A aplicação deve possuir na tela inicial com menu de perfis de usuário: Escola, Porteiro da escola, Pais ou responsáveis  | ALTA |
+|RF-002| A aplicação deve permitir que o usuário realize login utilizando email e senha | ALTA | 
+|RF-003| A aplicação deve armazenar e mostrar informações correspondentes ao estudante e responsável, bem como dados pessoais e imagens   | ALTA |
+|RF-004| A aplicação deve mostrar tela de pessoas autorizadas e não autorizadas a buscar o aluno na escola  | MÉDIA |
+|RF-005| A aplicação deve permitir a inserção de dados de pessoas que tem autorização de buscar o aluno na escola, além dos pais.   | ALTA |
+|RF-006| A aplicação deve permitir a inserção de dados de pessoas que não possuem autorização de buscar o aluno na escola.   | ALTA |
+|RF-007| A aplicação deve emitir um alerta ao usuário Instituição de Ensino em casos de medidas protetivas.   | BAIXA |
+|RF-008| A aplicação deve mostrar tela com histórico de saída do aluno  | MÉDIA |
+|RF-009| O sistema deve permitir a edição de dados cadastrais.  | MÉDIA |
+|RF-010| A aplicação deve permitir a criação de QR code para pessoas autorizadas a pegar a criança na escola.  | baixa |
+
 
 
 ### Requisitos não Funcionais
