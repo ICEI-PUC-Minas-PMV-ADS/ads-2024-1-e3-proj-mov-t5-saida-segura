@@ -41,7 +41,7 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema.
 ![Tela de Menu](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/0a00186e-e10b-43a4-8d8a-f32ef86ef46e)
 
 
-### Tela de lista de pessoas autorizadas para buscar o aluno
+### Tela de pessoas autorizadas para buscar o aluno
 
 ![Tela inicial de responsáveis](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/b2a0ef81-88d9-4735-b640-20753984e707)
 
@@ -56,5 +56,14 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema.
 ### Tela de histórico de saída
 
 ![Tela de Histórico de saídas](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/9ba9c6dc-ee05-46e1-b88e-1e245a7640de)
+
+
+### Tela de pessoas não autorizadas para buscar o aluno
+
+![Tela de pessoas não autorizadas para buscar o aluno](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/a08a7aad-a996-4a28-ab72-3f73368e2f54)
+
+
+
+
 
 
