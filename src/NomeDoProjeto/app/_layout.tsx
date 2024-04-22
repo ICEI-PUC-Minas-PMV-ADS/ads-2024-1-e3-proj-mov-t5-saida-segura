@@ -1,58 +1,27 @@
-import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { useEffect } from 'react';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-import { useColorScheme } from '@/components/useColorScheme';
+import telaLogin from './(tabs)/telaLogin';
+import TabOneScreen from './(tabs)/index';
+import selecionaAluno from './(tabs)/selecionaAluno';
 
-export {
-  // Catch any errors thrown by the Layout component.
-  ErrorBoundary,
-} from 'expo-router';
-
-export const unstable_settings = {
-  // Ensure that reloading on `/modal` keeps a back button present.
-  initialRouteName: '(tabs)',
+type RootStackParamList = {
+  telaLogin: undefined;
+  index: undefined;
+  selecionaAluno: { userId: number };
 };
 
-// Prevent the splash screen from auto-hiding before asset loading is complete.
-SplashScreen.preventAutoHideAsync();
+const Stack = createStackNavigator<RootStackParamList>();
 
 export default function RootLayout() {
-  const [loaded, error] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-    ...FontAwesome.font,
-  });
-
-  // Expo Router uses Error Boundaries to catch errors in the navigation tree.
-  useEffect(() => {
-    if (error) throw error;
-  }, [error]);
-
-  useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded]);
-
-  if (!loaded) {
-    return null;
-  }
-
-  return <RootLayoutNav />;
-}
-
-function RootLayoutNav() {
-  const colorScheme = useColorScheme();
-
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
-      </Stack>
-    </ThemeProvider>
+    <NavigationContainer independent={true}>
+      <Stack.Navigator>
+        <Stack.Screen name="telaLogin" component={telaLogin} options={{ title: 'Login' }} />
+        <Stack.Screen name="index" component={TabOneScreen} options={{ title: 'Alunos' }} />
+        <Stack.Screen name="selecionaAluno" component={selecionaAluno} options={{ headerShown: false }} initialParams={{ userId: 0 }} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
