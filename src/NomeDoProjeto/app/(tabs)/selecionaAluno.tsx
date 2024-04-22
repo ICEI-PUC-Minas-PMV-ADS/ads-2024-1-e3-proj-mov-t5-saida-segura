@@ -1,31 +1,47 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
+import { useRoute } from '@react-navigation/native';
 
+interface Aluno {
+  id: number;
+  nome: string;
+  data_Nasc: string; // Alterado para string
+}
+interface RouteParams {
+  userId: string;
+}
 export default function selecionaAluno() {
+  const [alunos, setAlunos] = useState<Aluno[]>([]);
+  const route = useRoute();
+  const { userId } = route.params as RouteParams;
+
+  useEffect(() => {
+    fetch(`https://localhost:7110/Alunos/responsavel/${userId}`)
+      .then(response => response.json())
+      .then(data => setAlunos(data));
+  }, []);
+  const formatarData = (dataString: string) => {
+    const data = new Date(dataString);
+    const dia = String(data.getDate()).padStart(2, '0');
+    const mes = String(data.getMonth() + 1).padStart(2, '0');
+    const ano = data.getFullYear();
+    return `${dia}/${mes}/${ano}`;
+  };
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Saída Segura</Text>
       <Text style={styles.subtitle}>Selecione um aluno:</Text>
       <View style={styles.childContainer}>
-        <View style={styles.child}>
-          <FontAwesome name="user" size={50} color="black" />
-          <View style={styles.childInfo}>
-            <Text>Nome: João da Silva</Text>
-            <Text>Idade: 8 anos</Text>
-            <Text>Professor: Maria Oliveira</Text>
-            <Text>Turma: 3º ano A</Text>
+        {alunos.map(aluno => (
+          <View key={aluno.id} style={styles.child}>
+            <FontAwesome name="user" size={50} color="black" />
+            <View style={styles.childInfo}>
+              <Text>Nome: {aluno.nome}</Text>
+              <Text>Nascimento: {formatarData(aluno.data_Nasc)}</Text>
+            </View>
           </View>
-        </View>
-        <View style={styles.child}>
-          <FontAwesome name="user" size={50} color="black" />
-          <View style={styles.childInfo}>
-            <Text>Nome: Maria Souza</Text>
-            <Text>Idade: 7 anos</Text>
-            <Text>Professor: Ana Santos</Text>
-            <Text>Turma: 2º ano B</Text>
-          </View>
-        </View>
+        ))}
       </View>
     </View>
   );
