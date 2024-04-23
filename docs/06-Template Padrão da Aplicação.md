@@ -10,6 +10,15 @@ Layout padrão da aplicação que será utilizado em todas as páginas com a def
 
 ## Tela Inicial 
 
-![Tela Inicial](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/0a2945a8-1daf-499b-a42b-a1d35f16b7de)
+![Tela Inicial (1)](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/530de53f-0e0e-4236-bd44-89b409a70c69)
 
- ## Tela de Login
+## Tela de Login
+
+![Tela Login](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/58e04d6d-7479-46bb-8c3b-0678f8efed89)
+
+## Tela de Cadastro
+
+![Tela de Cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/131215693/d65c0a42-f11e-41b0-935b-6b069bf6d88a)
+
+
+
