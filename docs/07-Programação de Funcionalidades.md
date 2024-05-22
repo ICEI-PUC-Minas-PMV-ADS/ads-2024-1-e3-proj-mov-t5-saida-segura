@@ -6,6 +6,28 @@ Implementação do sistema descritas por meio dos requisitos funcionais e/ou nã
 
 Para cada requisito funcional, pode ser entregue um artefato desse tipo
 
+
+# Programação de Funcionalidades
+
+### Requisitos Funcionais
+
+| Referência   | Descrição do Requisito  | Artefato(s) Produzido(s) |
+|------|-----------------------------------------|----|
+| RF-001| Tela inicial com menu para seleção de perfis de usuário: Escola, Porteiro da escola, Pais ou responsáveis. |       |
+| RF-002 |  Permitir que o usuário realize login utilizando email e senha |             | 
+| RF-003 |   Tela de Perfil e Informações do Estudante   |                    |
+| RF-004 |  Mostrar pessoas autorizadas e não autorizadas a buscar o aluno na escola.|           |
+| RF-005 |  Permitir a inserção de dados de pessoas autorizadas e não autorizadas a buscar o aluno na escola.|            |
+| RF-006 |   A aplicação deve emitir um alerta ao usuário Instituição de Ensino em casos de medidas protetivas. |             |	
+| RF-007 |   A aplicação deve mostrar tela com histórico de saída do aluno. |           |	
+| RF-008 | O sistema deve permitir a edição de dados cadastrais.	|                    |
+| RF-009 | A aplicação deve permitir a criação de QR code para pessoas autorizadas a pegar a criança na escola.|     |
+
+
+### Requisitos não Funcionais
+
+
+
 > **Links Úteis**:
 >
 > - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
