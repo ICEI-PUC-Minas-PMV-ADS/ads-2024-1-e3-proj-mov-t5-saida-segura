@@ -23,6 +23,7 @@ public class HistoricoSaidaController {
 
     @PostMapping
     public String criarHistorico(@RequestBody HistoricoSaida cadastro){
+
         return historicoSaidaService.criarHistorico(cadastro);
 
     }
@@ -48,7 +49,7 @@ public class HistoricoSaidaController {
     public List<HistoricoSaida> listarnomeresponsavelpelaliberacao(@RequestParam("nomeResponsavelLiberacao") String nomeResponsavelLiberacao) {
         return historicoSaidaService.buscarpornomeResponsavelLiberacao(nomeResponsavelLiberacao);
     }
-    @GetMapping("/{nomeResponsavelLiberacao}")
+    @GetMapping("/{dataSaida}")
 
     public List<HistoricoSaida> listarDataSaida(@RequestParam("dataSaida") String dataSaida) {
         return historicoSaidaService.buscarporDataSaida(dataSaida);
