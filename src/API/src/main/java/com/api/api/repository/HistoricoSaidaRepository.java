@@ -16,8 +16,8 @@ public interface HistoricoSaidaRepository extends JpaRepository <HistoricoSaida,
         @Query("Select u from HistoricoSaida u where nomeAluno=nomeAluno")
         List<HistoricoSaida> buscarhistoricopornomeAluno(@Param("nomeAluno") String nomeAluno);
 
-        @Query("Select u from HistoricoSaida u where responsavelLibereacao=:responsavelLibereacao")
-        List<HistoricoSaida> buscarhistoricoporresponsavelLiberacao(@Param("responsavelLibereacao") String responsavelLibereacao);
+        @Query("Select u from HistoricoSaida u where responsavelLiberacao=:responsavelLiberacao")
+        List<HistoricoSaida> buscarhistoricoporresponsavelLiberacao(@Param("responsavelLiberacao") String responsavelLibereacao);
 
        @Query("Select u from HistoricoSaida u where responsavelAluno=:responsavelAluno")
        List<HistoricoSaida> buscarhistoricoporresponsavelAluno(@Param("responsavelAluno") String responsavelAluno);

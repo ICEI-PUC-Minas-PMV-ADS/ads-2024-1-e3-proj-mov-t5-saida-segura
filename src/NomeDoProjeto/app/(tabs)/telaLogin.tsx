@@ -7,31 +7,34 @@ type RootStackParamList = {
   telaLogin: undefined;
   index: undefined;
   selecionaAluno: { userId: number };
+  pessoasAutorizadas: undefined;
+  telaCadastro: undefined; // Adicione esta linha para o novo screen
 };
 
 export default function telaLogin() {
-  const [usuario, setUsuario] = useState('');
+  const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
-  const navigation = useNavigation<NavigationProp<RootStackParamList, 'selecionaAluno'>>();
+  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
 
   const handleLogin = () => {
-    fetch('https://localhost:7110/Usuario/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ cpf: usuario, senha })
+    fetch('http://localhost:8080/Cadastro/{email}/{senha}?email='+email+'&senha='+senha, {
+      method: 'GET',
+      
     })
     .then(response => {
-      if (!response.ok) {
+      if (response.status === 200) {
+        navigation.navigate('opcoesResponsavel');
+
+        return response.json();
+      } else {
         throw new Error('Usuário ou senha inválidos.');
       }
-      return response.json();
     })
     .then(data => {
-      // Navegar para a tela de selecionar aluno com o id do usuário logado
-      navigation.navigate('selecionaAluno', { userId: Number(data.id) });
-    }).catch(error => {
+      // Navegar para a tela de pessoas autorizadas
+      navigation.navigate('opcoesResponsavel');
+    })
+    .catch(error => {
       if (error instanceof Error) {
         Alert.alert('Erro', error.message);
       } else {
@@ -40,14 +43,18 @@ export default function telaLogin() {
     });
   };
 
+  const handleNavigateToCadastro = () => {
+    navigation.navigate('telaCadastro');
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Saída Segura</Text>
-      <Text style={styles.label}>Usuário</Text>
+      <Text style={styles.label}>Email</Text>
       <TextInput
         style={styles.input}
-        value={usuario}
-        onChangeText={setUsuario}
+        value={email}
+        onChangeText={setEmail}
       />
       <Text style={styles.label}>Senha</Text>
       <TextInput
@@ -60,6 +67,9 @@ export default function telaLogin() {
         <Text style={styles.buttonText}>Login</Text>
       </Pressable>
       <Text style={styles.forgotPassword}>Esqueci minha senha</Text>
+      <Pressable style={styles.button} onPress={handleNavigateToCadastro}>
+        <Text style={styles.buttonText}>Cadastre-se</Text>
+      </Pressable>
     </View>
   );
 }

@@ -1,18 +1,23 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, TextInput, Pressable, Alert } from 'react-native';
+import { NavigationProp } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
+
 
 export default function opcoesResposavel() {
+  const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Saída Segura</Text>
+      <Pressable style={styles.box} onPress={() => navigation.navigate('cadastrarCrianca')}>
+        <Text style={styles.boxText}>Cadastrar criança</Text>
+      </Pressable>
+      <Pressable style={styles.box} onPress={() => navigation.navigate('listarCriancas')}>
+        <Text style={styles.boxText}>Listar Crianças</Text>
+      </Pressable>
       <View style={styles.box}>
-        <Text style={styles.boxText}>Listar Pessoas Autorizadas a Buscar</Text>
-      </View>
-      <View style={styles.box}>
-        <Text style={styles.boxText}>Histórico de Saídas</Text>
-      </View>
-      <View style={styles.box}>
-        <Text style={styles.boxText}>Pessoas não Autorizadas para Buscar a Criança</Text>
+        <Text style={styles.boxText}>Histórico de saída</Text>
       </View>
     </View>
   );
