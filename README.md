@@ -15,8 +15,6 @@ A aplicação é voltada para a segurança das crianças na saída da escola.
 
 * Ana Clara de Oliveira Ferreira
 * João Pedro Vargas da Silva
-* João Victor Brito Abadia
-* Lucas Marques Gomes Viana Lima
 * Pryscila Martins Cazuza
 
 ## Orientador
