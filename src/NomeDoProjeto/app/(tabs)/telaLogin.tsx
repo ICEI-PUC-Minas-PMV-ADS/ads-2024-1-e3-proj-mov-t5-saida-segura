@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, View, Text, TextInput, Pressable, Alert } from 'react-native';
 import { NavigationProp } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native';
+import config from './config';
 
 type RootStackParamList = {
   telaLogin: undefined;
@@ -17,7 +18,7 @@ export default function telaLogin() {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
 
   const handleLogin = () => {
-    fetch('http://localhost:8080/Cadastro/{email}/{senha}?email='+email+'&senha='+senha, {
+    fetch(config.URL+'/Cadastro/{email}/{senha}?email='+email+'&senha='+senha, {
       method: 'GET',
       
     })

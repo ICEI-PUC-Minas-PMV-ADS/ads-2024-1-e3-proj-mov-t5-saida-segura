@@ -9,6 +9,7 @@ import pessoasAutorizadas from './(tabs)/pessoasAutorizadas';
 import opcoesResposavel from './(tabs)/opcoesResponsavel';
 import cadastrarCrianca from './(tabs)/cadastrarCrianca';
 import listarCriancas from './(tabs)/listarCriancas';
+import exibirHistorico from './(tabs)/exibirHistorico';
 
 type RootStackParamList = {
   telaLogin: undefined;
@@ -24,11 +25,12 @@ export default function RootLayout() {
       <Stack.Navigator>
         <Stack.Screen name="telaLogin" component={telaLogin} options={{ title: 'Login' }} />
         <Stack.Screen name="index" component={TabOneScreen} options={{ title: 'Alunos' }} />
-        <Stack.Screen name="opcoesResponsavel" component={opcoesResposavel} options={{ title: 'opcoesResponsavel' }} />
-        <Stack.Screen name="telaCadastro" component={telaCadastro} options={{ title: 'telaCadastro' }} />
-        <Stack.Screen name="cadastrarCrianca" component={cadastrarCrianca} options={{ title: 'cadastrarCrianca' }} />
-        <Stack.Screen name="listarCriancas" component={listarCriancas} options={{ title: 'listarCriancas' }} />
+        <Stack.Screen name="opcoesResponsavel" component={opcoesResposavel} options={{ title: 'Menu' }} />
+        <Stack.Screen name="telaCadastro" component={telaCadastro} options={{ title: 'Tela de Cadastro' }} />
+        <Stack.Screen name="cadastrarCrianca" component={cadastrarCrianca} options={{ title: 'Cadastrar Criança' }} />
+        <Stack.Screen name="listarCriancas" component={listarCriancas} options={{ title: 'Listar Crianças' }} />
         <Stack.Screen name="selecionaAluno" component={selecionaAluno} options={{ headerShown: false }} initialParams={{ userId: 0 }} />
+        <Stack.Screen name="exibirHistorico" component={exibirHistorico} options={{ title: 'Exibir Histórico' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
