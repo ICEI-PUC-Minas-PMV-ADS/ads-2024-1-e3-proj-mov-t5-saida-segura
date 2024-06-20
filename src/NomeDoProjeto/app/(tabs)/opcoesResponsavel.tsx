@@ -16,9 +16,10 @@ export default function opcoesResposavel() {
       <Pressable style={styles.box} onPress={() => navigation.navigate('listarCriancas')}>
         <Text style={styles.boxText}>Listar Crianças</Text>
       </Pressable>
-      <View style={styles.box}>
-        <Text style={styles.boxText}>Histórico de saída</Text>
-      </View>
+      <Pressable style={styles.box} onPress={() => navigation.navigate('exibirHistorico')}>
+        <Text style={styles.boxText}>Exibir Histórico</Text>
+      </Pressable>
+     
     </View>
   );
 }
