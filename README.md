@@ -1,6 +1,7 @@
 # SAÍDA SEGURA
 
-![saidasegura](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura/assets/103007680/66d3c7ea-0ea2-4678-8823-924dfe0258c6)
+![saidasegura](docs/img/SAIDASEGURACUIDA.png)
+
 
 
 `CURSO` Análise e Desenvolvimento de Sistemas
@@ -9,14 +10,14 @@
 
 `SEMESTRE` Eixo 3 - 2024
 
-A aplicação é voltada para a segurança das crianças na saída da escola.
+O projeto Saída Segura foi concebido com o objetivo de criar um MVP para aumentar a segurança dos alunos durante a saída da escola, proporcionando tranquilidade e confiança aos pais e responsáveis. O aplicativo Saída Segura é uma solução que monitorará e gerenciará a saída dos estudantes em parceria com as escolas, garantindo que este processo seja realizado de forma segura e eficiente.
+O projeto Saída Segura visa atender a uma necessidade crítica de segurança na saída escolar, utilizando tecnologia para criar um ambiente mais seguro e controlado. 
+A entrega do MVP será o primeiro passo para testar e validar essa solução.
 
 ## Integrantes
 
 * Ana Clara de Oliveira Ferreira
 * João Pedro Vargas da Silva
-* João Victor Brito Abadia
-* Lucas Marques Gomes Viana Lima
 * Pryscila Martins Cazuza
 
 ## Orientador

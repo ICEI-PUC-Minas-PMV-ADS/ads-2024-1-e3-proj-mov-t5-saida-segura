@@ -9,31 +9,31 @@ type RootStackParamList = {
   index: undefined;
   selecionaAluno: { userId: number };
   pessoasAutorizadas: undefined;
-  telaCadastro: undefined; // Adicione esta linha para o novo screen
+  telaCadastro: undefined;
 };
 
-export default function telaLogin() {
+export default function telaCadastro() {
+  const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
-  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
+  const [responsavelPeloAluno, setResponsavelPeloAluno] = useState('');
+  const navigation = useNavigation<NavigationProp<RootStackParamList, 'selecionaAluno'>>();
 
-  const handleLogin = () => {
-    fetch(config.URL+'/Cadastro/{email}/{senha}?email='+email+'&senha='+senha, {
-      method: 'GET',
-      
+  const handleCadastro = () => {
+    fetch(config.URL+'/Cadastro', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ nome, senha, responsavelPeloAluno, email })
     })
     .then(response => {
       if (response.status === 200) {
-        navigation.navigate('opcoesResponsavel');
-
-        return response.json();
+        Alert.alert('Sucesso', 'Cadastro realizado com sucesso');
+        navigation.navigate('telaLogin');
       } else {
-        throw new Error('Usuário ou senha inválidos.');
+        throw new Error('Falha no cadastro. Verifique os dados e tente novamente.');
       }
-    })
-    .then(data => {
-      // Navegar para a tela de pessoas autorizadas
-      navigation.navigate('opcoesResponsavel');
     })
     .catch(error => {
       if (error instanceof Error) {
@@ -44,13 +44,15 @@ export default function telaLogin() {
     });
   };
 
-  const handleNavigateToCadastro = () => {
-    navigation.navigate('telaCadastro');
-  };
-
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Saída Segura</Text>
+      <Text style={styles.title}>Cadastro</Text>
+      <Text style={styles.label}>Nome</Text>
+      <TextInput
+        style={styles.input}
+        value={nome}
+        onChangeText={setNome}
+      />
       <Text style={styles.label}>Email</Text>
       <TextInput
         style={styles.input}
@@ -64,12 +66,14 @@ export default function telaLogin() {
         onChangeText={setSenha}
         secureTextEntry={true}
       />
-      <Pressable style={styles.button} onPress={handleLogin}>
-        <Text style={styles.buttonText}>Login</Text>
-      </Pressable>
-      <Text style={styles.forgotPassword}>Esqueci minha senha</Text>
-      <Pressable style={styles.button} onPress={handleNavigateToCadastro}>
-        <Text style={styles.buttonText}>Cadastre-se</Text>
+      <Text style={styles.label}>Responsável pelo Aluno</Text>
+      <TextInput
+        style={styles.input}
+        value={responsavelPeloAluno}
+        onChangeText={setResponsavelPeloAluno}
+      />
+      <Pressable style={styles.button} onPress={handleCadastro}>
+        <Text style={styles.buttonText}>Cadastrar</Text>
       </Pressable>
     </View>
   );
@@ -115,10 +119,5 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     fontWeight: 'bold',
-  },
-  forgotPassword: {
-    color: 'black',
-    fontSize: 15,
-    marginTop: 20,
   },
 });
