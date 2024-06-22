@@ -1,0 +1,20 @@
+message: Please cite this software using these metadata.
+title: Saída Segura
+authors:
+  - family-names: de Oliveira Ferreira
+    given-names: Ana Clara 
+  - family-names: Pedro Vargas da Silva
+    given-names: João 
+  - family-names: Martins Cazuza
+    given-names: Pryscila
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: de Macêdo Neto
+    given-names: Cristiano
+keywords:
+  - Gestão escolar
+  - Segurança escolar
+  - Monitoramneto de saida
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t5-saida-segura
+version: 1.0.0
+date-released: 2024-06-23
