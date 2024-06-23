@@ -13,15 +13,15 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 
 | Referência   | Descrição do Requisito  | Artefato(s) Produzido(s) |
 |------|-----------------------------------------|----|
-| RF-001| Tela inicial com menu para seleção de perfis de usuário: Escola, Porteiro da escola, Pais ou responsáveis. |       |
-| RF-002 |  Permitir que o usuário realize login utilizando email e senha |             | 
-| RF-003 |   Tela de Perfil e Informações do Estudante   |                    |
-| RF-004 |  Mostrar pessoas autorizadas e não autorizadas a buscar o aluno na escola.|           |
-| RF-005 |  Permitir a inserção de dados de pessoas autorizadas e não autorizadas a buscar o aluno na escola.|            |
-| RF-006 |   A aplicação deve emitir um alerta ao usuário Instituição de Ensino em casos de medidas protetivas. |             |	
-| RF-007 |   A aplicação deve mostrar tela com histórico de saída do aluno. |           |	
-| RF-008 | O sistema deve permitir a edição de dados cadastrais.	|                    |
-| RF-009 | A aplicação deve permitir a criação de QR code para pessoas autorizadas a pegar a criança na escola.|     |
+| RF-001| Tela inicial login |  ![Imagem](<img/telalogin.png>)     |
+| RF-003 |  Tela de cadastro do usuário | ![Imagem](<img/telacadastro.png>)            | 
+| RF-002 |   Tela de MENU   |  ![Imagem](<img/telamenu.png>)                   |
+| RF-007 |  Tela de cadastro Aluno|      ![Imagem](<img/cadastraraluno.png>)        |
+| RF-009 |  Tela de lista de alunos cadastrados por usuário|     ![Imagem](<img/telalistacriança.png>)         |
+| RF-008 |  Tela de Histórico de saída do(s) aluno(s)|      ![Imagem](<img/telahistorico.png>)        |
+| RF-005 |   Mostrar pessoas autorizadas e não autorizadas a buscar o aluno na escola. |             |	
+| RF-006 | Permitir a inserção de dados de pessoas autorizadas e não autorizadas a buscar o aluno na escola.	|                    |
+| RF-0010 | A aplicação deve permitir a criação de QR code para pessoas autorizadas a pegar a criança na escola.|     |
 
 
 ### Requisitos não Funcionais
