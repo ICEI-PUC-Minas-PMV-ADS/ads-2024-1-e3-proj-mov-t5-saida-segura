@@ -6,3 +6,4 @@ Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do proje
 
 ## Saida Segura
 
+<a href="../presentation/">Clique aqui para visualizar os arquivos de apresentação da solução.</a>
