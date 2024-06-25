@@ -74,19 +74,19 @@ export default function exibirHistorico() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#D9D9D9',
+    backgroundColor: '#a8dfc2',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
   },
   title: {
-    color: 'black',
+    color: '#123623',
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
   },
   label: {
-    color: 'black',
+    color: '#123623',
     marginBottom: 5,
     fontSize: 16,
   },

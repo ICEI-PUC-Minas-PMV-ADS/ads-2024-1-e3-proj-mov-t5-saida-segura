@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, TextInput, Pressable, Alert } from 'react-native';
+import { StyleSheet, View, Text, TextInput, Pressable, Alert, SectionListComponent } from 'react-native';
 import { NavigationProp } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native';
 import config from './config';
@@ -12,25 +12,28 @@ type RootStackParamList = {
   telaCadastro: undefined;
 };
 
-export default function telaCadastro() {
-  const [nome, setNome] = useState('');
-  const [email, setEmail] = useState('');
-  const [senha, setSenha] = useState('');
-  const [responsavelPeloAluno, setResponsavelPeloAluno] = useState('');
-  const navigation = useNavigation<NavigationProp<RootStackParamList, 'selecionaAluno'>>();
+export default function usuariosnaoAutorizadosCadastro() {
+  const [nomeResposavel, setnomeResposavel] = useState('');
+  const [telefone, setTelefone] = useState('');
+  const [grauParentesco, setGrauParentesco] = useState('');
+  const [dataNascimento, setDataNascimento] = useState('');
+  const [cpf, setCpf] = useState('');
+  const [motivoNAutorizado, setMotivoNAutorizado] = useState('');
+  const [autorizado, setAutorizado] = useState('Não');
+  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
 
   const handleCadastro = () => {
-    fetch(config.URL+'/Cadastro', {
+    fetch(config.URL+'/Responsaveis', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ nome, senha, email })
+      body: JSON.stringify({ nomeResposavel, telefone, grauParentesco, dataNascimento, cpf, tipoDocumento, motivoNAutorizado, autorizado })
     })
     .then(response => {
       if (response.status === 200) {
         Alert.alert('Sucesso', 'Cadastro realizado com sucesso');
-        navigation.navigate('telaLogin');
+        navigation.navigate('opcoesResponsavel');
       } else {
         throw new Error('Falha no cadastro. Verifique os dados e tente novamente.');
       }
@@ -49,25 +52,44 @@ export default function telaCadastro() {
       <Text style={styles.title}>Cadastro:</Text>
       
       <TextInput
-      placeholder='Nome:'
+      placeholder='Nome da pessoa não autorizada:'
         style={styles.input}
-        value={nome}
-        onChangeText={setNome}
+        value={nomeResposavel}
+        onChangeText={setnomeResposavel}
       />
      
       <TextInput
-      placeholder='E-mail:'
+      placeholder='Telefone(não obrigatório):'
         style={styles.input}
-        value={email}
-        onChangeText={setEmail}
+        value={telefone}
+        onChangeText={setTelefone}
       />
       
       <TextInput
-      placeholder='Senha:'
+      placeholder='Grau de parentesco:'
         style={styles.input}
-        value={senha}
-        onChangeText={setSenha}
-        secureTextEntry={true}
+        value={grauParentesco}
+        onChangeText={setGrauParentesco}
+      />
+      <TextInput
+      placeholder='Data de nascimento(não obrigatório):'
+        style={styles.input}
+        value={dataNascimento}
+        onChangeText={setDataNascimento}
+      />
+      <TextInput
+      placeholder='CPF (não obrigatório):'
+        style={styles.input}
+        value={cpf}
+        onChangeText={setCpf}
+      />
+     
+      <TextInput
+      placeholder='Motivo da não autorização:'
+        style={styles.input}
+
+        value={motivoNAutorizado}
+        onChangeText={setMotivoNAutorizado}
       />
       
       <Pressable style={styles.button} onPress={handleCadastro}>

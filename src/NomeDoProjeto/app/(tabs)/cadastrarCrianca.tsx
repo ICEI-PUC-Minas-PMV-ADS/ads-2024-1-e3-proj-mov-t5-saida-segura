@@ -50,51 +50,59 @@ export default function cadastrarCrianca() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Cadastro de Criança</Text>
-      <Text style={styles.label}>Nome do Aluno</Text>
+      <Text style={styles.title}>Cadastro do Aluno</Text>
+     
       <TextInput
+      placeholder='Nome do Aluno:'
         style={styles.input}
         value={nomeAluno}
         onChangeText={setNomeAluno}
       />
-      <Text style={styles.label}>Endereço</Text>
+      
       <TextInput
+       placeholder='Endereço:'
         style={styles.input}
         value={endereco}
         onChangeText={setEndereco}
       />
-      <Text style={styles.label}>Responsável</Text>
+     
       <TextInput
+       placeholder='Responsável:'
         style={styles.input}
         value={responsavel}
         onChangeText={setResponsavel}
       />
-      <Text style={styles.label}>Professor</Text>
+    
       <TextInput
+       placeholder='Professor:'
         style={styles.input}
         value={professor}
         onChangeText={setProfessor}
       />
-      <Text style={styles.label}>Matrícula</Text>
+     
       <TextInput
+       placeholder='Mátricula:'
         style={styles.input}
         value={matricula}
         onChangeText={setMatricula}
       />
-      <Text style={styles.label}>Idade do Aluno</Text>
+     
       <TextInput
+       placeholder='Idade do Aluno:'
         style={styles.input}
         value={idadeAluno}
         onChangeText={setIdadeAluno}
       />
-      <Text style={styles.label}>Série do Aluno</Text>
+      
       <TextInput
+       placeholder='Série do Aluno:'
         style={styles.input}
         value={serieAluno}
         onChangeText={setSerieAluno}
       />
-      <Text style={styles.label}>Sala do Aluno</Text>
+     
       <TextInput
+       placeholder='Sala do Aluno:'
         style={styles.input}
         value={salaAluno}
         onChangeText={setSalaAluno}
@@ -108,25 +116,34 @@ export default function cadastrarCrianca() {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundImage: 'url("assets/saidasegura1.png")',
+    backgroundColor: 'transparent',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    opacity: 0.8,
     flex: 1,
-    backgroundColor: '#D9D9D9',
+    padding: 20,
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
   },
   title: {
-    color: 'black',
+    color: 'white',
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
+    top:-50,
   },
   label: {
     color: 'black',
     marginBottom: 5,
     fontSize: 16,
+    fontWeight: 'bold',
   },
   input: {
-    backgroundColor: '#7BC59D',
+    backgroundColor: '#dfeee6',
     width: '100%',
     height: 40,
     borderRadius: 5,
@@ -135,7 +152,7 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: '#7BC59D',
-    width: '100%',
+    width: '50%',
     height: 40,
     borderRadius: 5,
     alignItems: 'center',

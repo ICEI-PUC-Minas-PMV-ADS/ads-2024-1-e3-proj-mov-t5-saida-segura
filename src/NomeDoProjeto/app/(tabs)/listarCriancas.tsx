@@ -45,6 +45,29 @@ export default function listarCriancas() {
       });
   };
 
+  const deletarAluno = (id) => {
+    fetch(config.URL+'/Matricula/{id}?id='+id, {
+      method: 'DELETE',
+    })
+      .then(response => {
+        if (response.status === 200) {
+          carregarAlunos()
+            //setAlunos(response.json())
+            return response.json();
+        } else {
+          throw new Error('Usuário ou senha inválidos.');
+        }
+      })
+     
+      .catch(error => {
+        if (error instanceof Error) {
+          Alert.alert('Erro', error.message);
+        } else {
+          Alert.alert('Erro', 'Ocorreu um erro.');
+        }
+      });
+  };
+
   const handleNavigateToCadastro = () => {
     navigation.navigate('telaCadastro');
   };
@@ -59,6 +82,7 @@ export default function listarCriancas() {
       <Text style={styles.itemText}>Idade: {item.idadeAluno}</Text>
       <Text style={styles.itemText}>Série: {item.serieAluno}</Text>
       <Text style={styles.itemText}>Sala: {item.salaAluno}</Text>
+      <Pressable onPress={() => deletarAluno(item.id)}><Text>Excluir</Text> </Pressable>
     </View>
   );
 
@@ -75,8 +99,9 @@ export default function listarCriancas() {
 
 const styles = StyleSheet.create({
   container: {
+    
     flex: 1,
-    backgroundColor: '#D9D9D9',
+    backgroundColor: '#a8dfc2',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
