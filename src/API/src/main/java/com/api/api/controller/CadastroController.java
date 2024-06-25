@@ -31,9 +31,9 @@ public class CadastroController {
     public String deletarUsuario(@RequestParam("id") Integer id){
         return cadastroService.deleteUsusarios(id);
     }
-    @PutMapping ("/{id}/{senha}")
+    @PutMapping ("/{email}/{senha}")
 
-    public String upDateUsuario(@RequestParam("id") Integer id, @RequestParam("senha") String senha){
-        return cadastroService.update(id, senha);
+    public String upDateUsuario(@RequestParam("email") String email, @RequestParam("senha") String senha){
+        return cadastroService.update(email, senha);
     }
 }

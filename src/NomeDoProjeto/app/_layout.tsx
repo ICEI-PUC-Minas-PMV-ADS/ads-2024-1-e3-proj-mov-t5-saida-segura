@@ -10,6 +10,8 @@ import opcoesResposavel from './(tabs)/opcoesResponsavel';
 import cadastrarCrianca from './(tabs)/cadastrarCrianca';
 import listarCriancas from './(tabs)/listarCriancas';
 import exibirHistorico from './(tabs)/exibirHistorico';
+import usuariosnaoAutorizadosCadastro from './(tabs)/usuariosnaoAutorizadosCadastro';
+import usuariosAutorizadosCadastro from './(tabs)/usuariosAutorizadosCadastro';
 
 type RootStackParamList = {
   telaLogin: undefined;
@@ -31,6 +33,8 @@ export default function RootLayout() {
         <Stack.Screen name="listarCriancas" component={listarCriancas} options={{ title: 'Listar Crianças' }} />
         <Stack.Screen name="selecionaAluno" component={selecionaAluno} options={{ headerShown: false }} initialParams={{ userId: 0 }} />
         <Stack.Screen name="exibirHistorico" component={exibirHistorico} options={{ title: 'Exibir Histórico' }} />
+        <Stack.Screen name="usuariosnaoAutorizadosCadastro" component={usuariosnaoAutorizadosCadastro} options={{ title: 'Cadastro de pessoas não autorizadas ' }} />
+        <Stack.Screen name="usuariosAutorizadosCadastro" component={usuariosAutorizadosCadastro} options={{ title: 'Cadastro de pessoas autorizadas ' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -20,6 +20,11 @@ public class MatriculaService {
         return " Salvo! ";
 
     }
+    public String deletarmatricula(int id) {
+    matriculaRepository.deleteById(id);
+    return "Deletado com sucesso!";
+    }
+
 
     public List<Matricula> buscarpornomeAluno(String nomeAluno) {
         return  matriculaRepository.buscarpornomeAluno(nomeAluno);

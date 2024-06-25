@@ -28,8 +28,8 @@ public class CadastroService {
 
     }
 
-    public String update (Integer id, String senha){
-        Cadastro settarUsuario= cadastroRepository.buscarusuario(id);
+    public String update (String email, String senha){
+        Cadastro settarUsuario= cadastroRepository.buscarusuario(email);
         settarUsuario.setSenha(senha);
         cadastroRepository.save(settarUsuario);
         return "OK";
