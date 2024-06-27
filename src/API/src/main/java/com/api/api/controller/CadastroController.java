@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import com.api.api.service.CadastroService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
@@ -23,8 +25,12 @@ public class CadastroController {
     }
     @GetMapping("/{email}/{senha}")
 
-    public List<Cadastro> validarUsuario(@RequestParam("email") String email, @RequestParam("senha") String senha){
-        return cadastroService.validarUsuario(email, senha);
+    public ResponseEntity<?> validarUsuario(@RequestParam("email") String email, @RequestParam("senha") String senha){
+        String usuario= cadastroService.validarUsuario(email,senha);
+        if(usuario=="não existe!"){
+         return  ResponseEntity.status(HttpStatus.BAD_REQUEST).body("usuário não encontrado!");
+        }
+        return  ResponseEntity.ok(usuario);
     }
 
     @DeleteMapping("/{id}")

@@ -3,6 +3,7 @@ import { StyleSheet, View, Text, TextInput, Pressable, Alert, Modal} from 'react
 import { NavigationProp } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native';
 import config from './config';
+import { Icon,Button } from 'react-native-paper';
 
 type RootStackParamList = {
   telaLogin: undefined;
@@ -21,7 +22,7 @@ export default function telaLogin() {
   const [novaSenha, setNovaSenha] = useState('');
 
   const handleLogin = () => {
-    console.log(email)
+   
    if(email != '' && senha != '') {
 
     fetch(config.URL+'/Cadastro/{email}/{senha}?email='+email+'&senha='+senha, {
@@ -34,12 +35,18 @@ export default function telaLogin() {
 
         return response.json();
       } else {
+        alert("Usuário não encontrado!");
         throw new Error('Usuário ou senha inválidos.');
       }
     })
     .then(data => {
+      if (!data) {
+        console.log("vazio")
+      }else{
+        console.log("cheio")
+      }
       // Navegar para a tela de pessoas autorizadas
-      navigation.navigate('opcoesResponsavel');
+      //navigation.navigate('opcoesResponsavel');
     })
     .catch(error => {
       if (error instanceof Error) {
@@ -107,16 +114,17 @@ export default function telaLogin() {
     <Modal style={styles.caixa} animationType="slide" transparent={true} visible={modalVisible} onRequestClose={() => { Alert.alert('Modal has been closed.'); setModalVisible(!modalVisible)}}>
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
+          <Button style={styles.buttonClose} textColor='#000000' icon="close" onPress={() => setModalVisible(!modalVisible)}></Button>
             <TextInput
               placeholder='E-mail:'
-              style={styles.input}
+              style={[styles.inputmodal]}
               value={emailEditar}
               onChangeText={setEmailEditar}
             
            />   
           <TextInput
             placeholder='Senha:'
-            style={styles.input}
+            style={[styles.inputmodal]}
             value={novaSenha}
             onChangeText={setNovaSenha}
             secureTextEntry={true}
@@ -125,9 +133,6 @@ export default function telaLogin() {
              <Text style={styles.textStyle}>Salvar Alterações</Text>
           </Pressable>
       
-          <Pressable style={[styles.button, styles.buttonClose]} onPress={() => setModalVisible(!modalVisible)}>
-              <Text style={styles.textStyle}>Fechar</Text>
-          </Pressable>
         </View>
       </View>
      </Modal>
@@ -224,8 +229,9 @@ const styles = StyleSheet.create({
   },
   
   buttonClose: {
-    backgroundColor: '#c30b0b',
-    top:-40,
+    color: '#000000',
+    top:-20,
+    left:100,
   },
   textStyle: {
     color: 'white',
@@ -238,6 +244,15 @@ const styles = StyleSheet.create({
   caixa:{
     height:100,
 
+  },
+  inputmodal:{
+    height:'1000%',
+    backgroundColor: '#dfeee6',
+    width: '120%',
+    borderRadius: 5,
+    //paddingHorizontal: 100,
+    marginBottom: 10,
+    padding:10,
   }
   
 });

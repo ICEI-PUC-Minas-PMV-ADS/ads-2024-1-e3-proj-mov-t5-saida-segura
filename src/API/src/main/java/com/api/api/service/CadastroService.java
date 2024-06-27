@@ -23,8 +23,13 @@ public class CadastroService {
         return " Usuário deletado com sucesso!";
     }
 
-    public List<Cadastro> validarUsuario (String email, String senha){
-        return cadastroRepository.validarusuario(email, senha);
+    public String validarUsuario (String email, String senha){
+        List<Cadastro> usuarios= cadastroRepository.validarusuario(email, senha);
+        if(usuarios==null || usuarios.isEmpty() || usuarios.size()==0){
+            return "não existe!";
+
+        }
+        return "ok";
 
     }
 
