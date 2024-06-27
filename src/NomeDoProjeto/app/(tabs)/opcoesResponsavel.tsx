@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, View, Text, TextInput, Pressable, Alert } from 'react-native';
+import { StyleSheet, View, Text, TextInput, Pressable, Alert,  TouchableNativeFeedback, StatusBar } from 'react-native';
 import { NavigationProp } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native';
+//import { Text, TouchableRipple } from 'react-native-paper';
 
 
 export default function opcoesResposavel() {
@@ -19,6 +20,7 @@ export default function opcoesResposavel() {
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {

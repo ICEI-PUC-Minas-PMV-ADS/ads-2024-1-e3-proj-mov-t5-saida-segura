@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, TextInput, Pressable, Alert } from 'react-native';
+import { StyleSheet, View, Text, TextInput, Pressable, Alert, SectionListComponent } from 'react-native';
 import { NavigationProp } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native';
 import config from './config';
@@ -12,24 +12,23 @@ type RootStackParamList = {
   telaCadastro: undefined;
 };
 
-export default function cadastrarCrianca() {
-  const [nomeAluno, setNomeAluno] = useState('');
-  const [endereco, setEndereco] = useState('');
-  const [responsavel, setResponsavel] = useState('');
-  const [professor, setProfessor] = useState('');
-  const [matricula, setMatricula] = useState('');
-  const [idadeAluno, setIdadeAluno] = useState('');
-  const [serieAluno, setSerieAluno] = useState('');
-  const [salaAluno, setSalaAluno] = useState('');
-  const navigation = useNavigation<NavigationProp<RootStackParamList, 'selecionaAluno'>>();
+export default function usuariosAutorizadosCadastro() {
+  const [nomeResposavel, setnomeResposavel] = useState('');
+  const [telefone, setTelefone] = useState('');
+  const [grauParentesco, setGrauParentesco] = useState('');
+  const [dataNascimento, setDataNascimento] = useState('');
+  const [cpf, setCpf] = useState('');
+  const [tipoDocumento, setDocumento] = useState('');
+  const [autorizado, setAutorizado] = useState('Sim');
+  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
 
   const handleCadastro = () => {
-    fetch(config.URL+'/Matricula', {
+    fetch(config.URL+'/Responsaveis', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ nomeAluno, endereco, responsavel, professor, matricula, idadeAluno, serieAluno, salaAluno })
+      body: JSON.stringify({ nomeResposavel, telefone, grauParentesco, dataNascimento, cpf, tipoDocumento, autorizado})
     })
     .then(response => {
       if (response.status === 200) {
@@ -50,64 +49,47 @@ export default function cadastrarCrianca() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Cadastro do Aluno</Text>
+      <Text style={styles.title}>Cadastro:</Text>
+      
+      <TextInput
+      placeholder='Nome da responsável:'
+        style={styles.input}
+        value={nomeResposavel}
+        onChangeText={setnomeResposavel}
+      />
      
       <TextInput
-      placeholder='Nome do Aluno:'
+      placeholder='Telefone:'
         style={styles.input}
-        value={nomeAluno}
-        onChangeText={setNomeAluno}
+        value={telefone}
+        onChangeText={setTelefone}
       />
       
       <TextInput
-       placeholder='Endereço:'
+      placeholder='Grau de parentesco:'
         style={styles.input}
-        value={endereco}
-        onChangeText={setEndereco}
+        value={grauParentesco}
+        onChangeText={setGrauParentesco}
       />
-     
       <TextInput
-       placeholder='Responsável:'
+      placeholder='Data de nascimento:'
         style={styles.input}
-        value={responsavel}
-        onChangeText={setResponsavel}
+        value={dataNascimento}
+        onChangeText={setDataNascimento}
+      />
+      <TextInput
+      placeholder='CPF:'
+        style={styles.input}
+        value={cpf}
+        onChangeText={setCpf}
+      />
+      <TextInput
+      placeholder='Tipo de documento com foto:'
+        style={styles.input}
+        value={tipoDocumento}
+        onChangeText={setDocumento}
       />
     
-      <TextInput
-       placeholder='Professor:'
-        style={styles.input}
-        value={professor}
-        onChangeText={setProfessor}
-      />
-     
-      <TextInput
-       placeholder='Matrícula:'
-        style={styles.input}
-        value={matricula}
-        onChangeText={setMatricula}
-      />
-     
-      <TextInput
-       placeholder='Idade do Aluno:'
-        style={styles.input}
-        value={idadeAluno}
-        onChangeText={setIdadeAluno}
-      />
-      
-      <TextInput
-       placeholder='Série do Aluno:'
-        style={styles.input}
-        value={serieAluno}
-        onChangeText={setSerieAluno}
-      />
-     
-      <TextInput
-       placeholder='Sala do Aluno:'
-        style={styles.input}
-        value={salaAluno}
-        onChangeText={setSalaAluno}
-      />
-      
       <Pressable style={styles.button} onPress={handleCadastro}>
         <Text style={styles.buttonText}>Cadastrar</Text>
       </Pressable>
@@ -126,22 +108,20 @@ const styles = StyleSheet.create({
     opacity: 0.8,
     flex: 1,
     padding: 20,
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 20,
+    
   },
   title: {
-    color: 'white',
+    color: '#ffffff',
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 20,
-    top:-50,
+    marginBottom: 250,
   },
   label: {
-    color: 'black',
-    marginBottom: 5,
+    color: '#000000',
+    marginBottom: 10,
     fontSize: 16,
     fontWeight: 'bold',
+   
   },
   input: {
     backgroundColor: '#dfeee6',
@@ -149,16 +129,16 @@ const styles = StyleSheet.create({
     height: 40,
     borderRadius: 5,
     paddingHorizontal: 10,
-    marginBottom: 10,
+    marginBottom: 20,
   },
   button: {
-    backgroundColor: '#7BC59D',
+    backgroundColor: '#5caa80',
     width: '50%',
     height: 40,
     borderRadius: 5,
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 10,
+    marginBottom: 80,
   },
   buttonText: {
     color: 'white',
